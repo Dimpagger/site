@@ -27,7 +27,7 @@ class BlogConverter:
         self.script_dir = Path(__file__).parent
         self.template_path = template_path or self.script_dir / "templates" / "page.html"
         self.style_path = style_path or self.script_dir / "static" / "style.css"
-        self.output_dir = self.script_dir / "output"
+        self.output_dir = self.script_dir / "docs"
 
         # 加载模板
         self.template = self.load_template()

@@ -21,7 +21,7 @@ site/
 │   └── page.html     # HTML 模板
 ├── static/
 │   └── style.css     # 样式表
-├── output/           # 生成的 HTML 输出
+├── docs/             # 生成的 HTML 输出（用于 GitHub Pages）
 └── venv/             # Python 虚拟环境
 ```
 
@@ -61,6 +61,12 @@ venv/bin/python blog.py posts/hello-world.md
 ```bash
 venv/bin/python blog.py posts/ -o my-output/
 ```
+
+## GitHub Pages
+
+生成的静态文件在 `docs/` 目录，推送到 GitHub 后在仓库 Settings → Pages 中选择：
+- Branch: `main`
+- Folder: `/docs`
 
 ## Markdown 文件格式
 
